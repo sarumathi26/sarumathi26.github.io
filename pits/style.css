@@ -1,0 +1,52 @@
+header{
+    margin: 0 auto;
+}
+header h1
+{
+    color: navy;
+    font-family: 'Lora', serif;
+    font-variant: small-caps;
+}
+header img{
+    margin-top: -3%;
+    float: left;
+}
+
+
+
+@media (min-width: 501px){    
+    body {
+        font-size : 1.6vw ; 
+    }
+    header{
+        width: 80%;
+    }
+    @-moz-document url-prefix() {
+    header{
+        width: 99%;
+    }
+}
+    header img{
+     width: 15%;   
+    }    
+}
+
+@media (min-width: 300px) and (max-width: 500px){
+    
+    body {
+        font-size : 3vw ; 
+    }
+    header{
+        width: 90%;
+    }
+    @-moz-document url-prefix() {
+    header{
+        width: 99%;
+    }
+}
+    header img{
+        width: 40%;
+    }
+}
+
+
