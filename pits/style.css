@@ -46,7 +46,7 @@ header img
 {   
      display: inline;
 }
-#nav li a
+.topnav li a
 {   
     padding: 0 2.5%;
     line-height: 290%;
