@@ -52,7 +52,7 @@ header img{
 }
 
 /* for Tablets and desktop*/
-@media (min-width: 767px){    
+@media (min-width: 601px){    
     body {
         font-size : 1.6vw ; 
     }
@@ -70,7 +70,7 @@ header img{
 }
 
 /*for mobile phones */
-@media (min-width: 479px) and (max-width: 766px){
+@media (min-width: 300px) and (max-width: 600px){
     
     body {
         font-size : 3vw ; 
