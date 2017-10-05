@@ -4,8 +4,10 @@ body
     margin: 0;
     padding: 0;
 }
+
 /* header */
-.title{
+.title
+{
     margin: 0 auto;
 }
 header h1
@@ -14,29 +16,39 @@ header h1
     font-family: 'Lora', serif;
     font-variant: small-caps;
 }
-header img{
+header img
+{
     position: relative;
     margin-top: -3.3%;
     float: left;
     z-index: -1;
 }
+.title .icon 
+{
+    display: none;
+}
 
 /* navigation*/
-.nav{
+#nav
+{
     background-color: navy;   
      clear: left;
     border-bottom: 5px solid #0099ff;
+   
 }
-.nav ul{
-    margin-bottom: 0;
-}
-.nav li 
+#nav ul
 {
-    display: inline;  
+    margin: 0 auto;   
+    width: 920px;
+    padding: 0;
 }
-.nav li a
+#nav li 
 {   
-    padding: 0 3.4%;
+     display: inline;
+}
+#nav li a
+{   
+    padding: 0 2.5%;
     line-height: 290%;
     font-size: 13px;
     list-style: none;
@@ -44,15 +56,17 @@ header img{
     text-decoration: none;
     text-transform: uppercase;
 }
-
-.nav li a:hover{
+#nav li a:hover
+{
     display: inline-block;
     background-color: #0099ff;
     
 }
 
+
 /* for Tablets and desktop*/
-@media (min-width: 601px){    
+@media (min-width: 601px)
+{    
     body {
         font-size : 1.6vw ; 
     }
@@ -60,43 +74,71 @@ header img{
         width: 80%;
     }
     @-moz-document url-prefix() {
-    .title{
-        width: 95%;
+        .title{
+            width: 95%;
+        }
     }
-}
     header img{
      width: 15%;   
     }    
 }
 
 /*for mobile phones */
-@media (min-width: 301px) and (max-width: 600px){
-    
+@media (min-width: 300px) and (max-width: 600px)
+{    
     body {
         font-size : 3vw ; 
     }
     .title{
         width: 90%;
+        margin-left: -2%;
     }
     @-moz-document url-prefix() {
-    .title{
-        width: 99%;
+        .title{
+            width: 99%;
+        }
     }
-}
     header img{
         width: 40%;
     }
-    
-    .nav li a{
-        display : block;
-        text-align: center;
-    }
-    .nav ul{
-        padding-left: 0;
-    }
-    .nav li a:hover{
-        display:block;
-    }
 }
 
-
+@media screen and (max-width: 920px)
+{
+    .topnav a{
+        display: none;
+    }
+    .topnav.responsive {    
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .title a i{
+        font-size: 18px;
+        color: navy;
+    } 
+    .title a.icon {
+        position: absolute;
+        right: 3%;
+        top: 4%;
+        display: block;
+    }
+    #nav{
+        border:none;
+    }
+    #nav ul{
+        width: 100%;
+    }       
+    #nav li a:hover{
+        display:block;
+    }
+  
+}

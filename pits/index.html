@@ -5,33 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Parisutham Institute of Technology and Science</title>
-      <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
- </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
   <body>
-      <header>
+      <header> 
         <div class="title">
-          <img src="pits_logo.jpg" alt="Tick mark with towards excellence">        
-          <h1>Parisutham Institute of Technology and Science</h1>
-        </div>
-        <nav class="nav">
-            <ul>
-            <li><a href="#">about</a></li>
-            <li><a href="">campus</a></li>
-            <li><a href="">courses</a></li>
-            <li><a href="">gallery</a></li>
-            <li><a href=" ">hostel</a></li>
-            <li><a href="">campus life</a></li>
-            <li><a href="">sports</a></li>         
-            <li><a href="">contact us</a></li>     
-            </ul>       
+           <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <img src="pits_logo.jpg" alt="Tick mark with towards excellence">        
+            <h1>Parisutham Institute of Technology and Science</h1>
+        </div>          
+          
+        <nav id="nav" class="topnav">
+                <ul>
+                <li><a href="#">about</a></li>
+                <li><a href="">campus</a></li>
+                <li><a href="">courses</a></li>
+                <li><a href="">gallery</a></li>
+                <li><a href=" ">hostel</a></li>
+                <li><a href="">campus life</a></li>
+                <li><a href="">sports</a></li>         
+                <li><a href="">contact us</a></li>
+                </ul>            
         </nav>
-      </header>
-    
- 
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-   
-    <script src="js/bootstrap.min.js"></script>
+      </header>    
+      <script>
+function myFunction() {
+    var x = document.getElementById("nav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
   </body>
   </html>
