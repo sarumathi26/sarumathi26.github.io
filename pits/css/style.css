@@ -104,65 +104,9 @@ header img
     text-decoration: none;
     color:#cc9900;
 }
-/* for Tablets and desktop*/
-@media (min-width: 601px)
-{    
-    body {
-        font-size : 1.6vw ; 
-    }
-    .title{
-        width: 80%;
-    }
-    @-moz-document url-prefix() {
-        .title{
-            width: 95%;
-        }
-    }
-    header img{
-     width: 15%;   
-    }    
-}
+
 
 /*for mobile phones */
-@media (min-width: 300px) and (max-width: 600px)
-{    
-    body {
-        font-size : 3vw ; 
-    }
-    .title{
-        width: 90%;
-        margin-left: -2%;
-    }
-    @-moz-document url-prefix() {
-        .title{
-            width: 99%;
-        }
-    }
-    header img{
-        width: 40%;
-    }
-    .slides img{
-        height:260px;
-    }
-    .text{
-        position: relative;
-        top: -80px;
-        left:0;
-        width: 100%;
-        overflow: hidden;
-    }
-    .text .topic{
-        font-size: 20px;
-        line-height:15px;
-    }
-    .text p{
-        font-size: 12px;
-        line-height: 15px;
-    }
-    .text span a{
-        font-size: 14px;
-    }
-}
 
 @media screen and (max-width: 920px)
 {
@@ -200,9 +144,78 @@ header img
     }       
     #nav li a:hover{
         display:block;
+    }.text{
+        top:120px;
+    }
+    .text .topic{
+        font-size:23px;
+    }
+    .text p{
+        font-size:15px;    
     }
   
 }
+
+/* for Tablets and desktop*/
+@media (min-width: 601px)
+{    
+    body {
+        font-size : 1.6vw ; 
+    }
+    .title{
+        width: 80%;
+    }
+    @-moz-document url-prefix() {
+        .title{
+            width: 95%;
+        }
+    }
+    header img{
+     width: 15%;   
+    }    
+}
+
+@media (min-width: 300px) and (max-width: 600px)
+{    
+    body {
+        font-size : 3vw ; 
+    }
+    .title{
+        width: 95%;
+        margin-left: -2%;
+    }
+    @-moz-document url-prefix() {
+        .title{
+            width: 98%;
+        }
+    }
+    header img{
+        width: 40%;
+    }
+    .slides img{
+        height:260px;
+    }
+    
+    .text{
+        position: relative;
+        top: -92px;
+        left:0;
+        margin:0 auto;
+        overflow: hidden;
+    }
+    .text .topic{
+        font-size: 20px;
+        line-height:15px;
+    }
+    .text p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .text span a{
+        font-size: 14px;
+    }
+}
+
 @font-face {
   font-family: 'Avenir Next';
   src: url(AvenirNextLTPro-Regular.otf); /* File to be stored at your site */
