@@ -38,6 +38,7 @@ header img
 }
 #nav ul
 {
+    font-family: "Avenir Next", Helvetica, Arial, sans-serif;
     margin: 0 auto;   
     width: 920px;
     padding: 0;
@@ -63,7 +64,46 @@ header img
     
 }
 
-
+/*slideshow*/
+.slideshow{
+    height:500px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.slides img{
+    width:100%;
+    margin-top: -2%;
+}
+.text{
+    position: absolute;
+    color:white;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2% 2%;
+    width: 300px;
+    text-align: justify;
+    top:30%;
+    left:3%;
+}
+.text .topic{
+    letter-spacing:2px;
+    line-height: 25px;
+    margin: 0;
+    font-size: 35px;
+}
+.text p{
+    margin: 0;
+    line-height: 25px;
+    font-size: 15px;
+}
+.text span{
+    font-size:19px;
+    font-variant: small-caps;
+}
+.text span a{
+    text-decoration: none;
+    color:#cc9900;
+}
 /* for Tablets and desktop*/
 @media (min-width: 601px)
 {    
@@ -100,6 +140,23 @@ header img
     }
     header img{
         width: 40%;
+    }
+    .slideshow .text{
+        position: absolute;
+        top: 15%;
+        left:0;
+        width: 100%;
+    }
+    .text .topic{
+        font-size: 20px;
+        line-height:15px;
+    }
+    .text p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .text span a{
+        font-size: 14px;
     }
 }
 
@@ -142,3 +199,7 @@ header img
     }
   
 }
+@font-face {
+  font-family: 'Avenir Next';
+  src: url(AvenirNextLTPro-Regular.otf); /* File to be stored at your site */
+  }
