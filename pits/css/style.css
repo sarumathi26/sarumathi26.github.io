@@ -66,14 +66,13 @@ header img
 
 /*slideshow*/
 .slideshow{
-    height:500px;
     overflow: hidden;
     position: relative;
     
 }
 .slides img{
     width:100%;
-    margin: -2%;
+    margin: -2% 0;
 }
 .text{
     position: absolute;
@@ -86,7 +85,6 @@ header img
     left:3%;
 }
 .text .topic{
-    letter-spacing:2px;
     line-height: 25px;
     margin: 0;
     font-size: 35px;
@@ -105,8 +103,21 @@ header img
     color:#cc9900;
 }
 
-
-/*for mobile phones */
+main{
+    width: 90%;
+    height: 520px;
+    margin: 20px auto;
+    padding: 15px;
+     display: flex;
+    -webkit-justify-content: center;
+    background-color: rgba(0,0,0,0.8);
+}
+ main .s{
+    margin: 10%;
+    width: 35%;
+    height: 520px;
+     background-color: pink;
+}
 
 @media screen and (max-width: 920px)
 {
@@ -175,6 +186,8 @@ header img
     }    
 }
 
+
+/*for mobile phones */
 @media (min-width: 300px) and (max-width: 600px)
 {    
     body {
@@ -195,10 +208,9 @@ header img
     .slides img{
         height:260px;
     }
-    
     .text{
         position: relative;
-        top: -92px;
+        top: -99px;
         left:0;
         margin:0 auto;
         overflow: hidden;
@@ -213,6 +225,9 @@ header img
     }
     .text span a{
         font-size: 14px;
+    }
+    .s{
+        
     }
 }
 
