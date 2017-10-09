@@ -3,23 +3,32 @@ body
     font-family: "Avenir Next", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display:block;
 }
 
 /* header */
 .title
-{
+{   
+    width:80%;
     margin: 0 auto;
 }
 header h1
 {
     color: navy;
+    font-size: 3vw;
     font-family: 'Lora', serif;
     font-variant: small-caps;
+}
+ @-moz-document url-prefix() {
+        .title{
+            width: 90%;
+        }
 }
 header img
 {
     position: relative;
     margin-top: -3.3%;
+    width: 15%;
     float: left;
     z-index: -1;
 }
@@ -102,23 +111,129 @@ header img
     text-decoration: none;
     color:#cc9900;
 }
-
 main{
-    width: 90%;
-    height: 520px;
-    margin: 20px auto;
-    padding: 15px;
-     display: flex;
-    -webkit-justify-content: center;
-    background-color: rgba(0,0,0,0.8);
+    height:650px;
 }
- main .s{
-    margin: 10%;
-    width: 35%;
-    height: 520px;
-     background-color: pink;
+.intro{
+    text-align: center;
+    max-width: 750px;
+    margin:0 auto;
+}
+.lead-text{    
+    text-transform: uppercase;
+    margin-top: 10%;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-weight: bold;
+    font-size: 13px;
+    color:navy;
+}
+.intro h2{
+    font-size: 26px;
+    font-weight: 900;
 }
 
+.intro hr{
+    width:75px;
+    background: navy;
+    height: 2px;
+    box-shadow: 0;
+}
+.intro p{
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 30px auto;
+    text-align: center;
+}
+.intro li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 5px 0 0;
+    padding: 10px 20px;
+    background-color: black;
+}
+.intro li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.intro li:hover{
+    background-color: navy;
+}
+.content1{
+    display: -webkit-flex;
+    height: 560px;
+}
+.creative{
+    background: url(../images/pic5.jpg) center top;
+    background-size: cover;
+    width:70%;
+    height:500px;
+    margin: 60px 0;
+}
+.creative-content{
+    color: white;
+    width: 30%;
+    height:480px;
+    padding: 0 10px;
+    margin: 70px 0 0 -55px;
+    background-color: navy;
+}
+.wrap{
+    width:86%;
+    margin: 20% auto 0 auto;
+}
+.creative-content .lead-text{
+    color: white;
+}
+.wrap h2{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.wrap p{
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.wrap a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    text-align:center;
+    border: 1px solid white;
+    margin: 7%;
+    padding: 4%;
+}
+.wrap a:hover{
+    color: navy;
+    background-color: white;
+    font-weight: bold;
+}
+.content2{
+    display:-webkit-flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 600px;
+}
+.sports{
+    background: url(../images/pic2.jpg);
+    background-size: cover;
+    width:70%;
+    height:500px;
+    margin: 60px 0;
+}
+.content2 .creative-content{
+    margin-right: -55px;
+}
+
+ .foot{
+    display: contents;
+    width:100%;
+    height:400px;
+    background-color: navy;
+}
 @media screen and (max-width: 920px)
 {
     .topnav a{
@@ -164,26 +279,33 @@ main{
     .text p{
         font-size:15px;    
     }
+    .intro {
+        width:80%;
+        margin-top: -80px;
+    }
   
 }
 
 /* for Tablets and desktop*/
-@media (min-width: 601px)
-{    
-    body {
-        font-size : 1.6vw ; 
+@media (min-width: 601px) and (max-width: 800px)
+{     
+    .creative , .sports{
+        width: 100%;
     }
-    .title{
-        width: 80%;
+    .content1 , .content2{
+        flex-direction: column;
+   }
+    .creative-content, .content2 .creative-content{
+        margin: -15% auto 0 auto;
+        width:90%;
+        height: 300px;
     }
-    @-moz-document url-prefix() {
-        .title{
-            width: 95%;
-        }
+    .wrap{
+        margin-top: -6%;
     }
-    header img{
-     width: 15%;   
-    }    
+    .wrap a{
+        margin-top: -1%;
+    }
 }
 
 
@@ -191,19 +313,21 @@ main{
 @media (min-width: 300px) and (max-width: 600px)
 {    
     body {
-        font-size : 3vw ; 
+        font-size : 3vw; 
     }
     .title{
-        width: 95%;
-        margin-left: -2%;
+        width: 80%;    
     }
     @-moz-document url-prefix() {
         .title{
             width: 98%;
         }
     }
+    header h1{
+        font-size: 5vw ;
+    }
     header img{
-        width: 40%;
+        width: 30%;
     }
     .slides img{
         height:260px;
@@ -226,8 +350,28 @@ main{
     .text span a{
         font-size: 14px;
     }
-    .s{
-        
+    ul{
+        display: -webkit-flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .content1, .content2{
+        flex-direction: column;
+    }
+    .creative, .sports{
+        height: 300px;
+        width:100%;
+    }
+    .creative-content, .content2 .creative-content{
+        margin: -45% auto 0 auto;
+        width:90%;
+        height: 360px;
+    }
+    .wrap{
+        margin-top: -6%;
+    }
+    .wrap a{
+        margin-top: -1%;
     }
 }
 
