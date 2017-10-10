@@ -21,3 +21,11 @@ function carousel() {
     x[slideIndex-1].style.display = "block"; 
     setTimeout(carousel, 9000); 
 }
+function myFunction() {
+    var x = document.getElementById("page");
+    if (x.className === "nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav";
+    }
+}

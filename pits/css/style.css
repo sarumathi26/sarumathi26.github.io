@@ -12,6 +12,9 @@ body
     width:80%;
     margin: 0 auto;
 }
+header a {
+    text-decoration: none;
+}
 header h1
 {
     color: navy;
@@ -166,12 +169,12 @@ header img
 }
 .creative , .sports{    
     background-size: cover;
-    width:70%;
+    width:65%;
     height:500px;
     margin: 60px 0 0 0;
 }
 .creative{
-background: url(../images/pic5.jpg) center top;
+background: url(../images/pic5.jpg);
 }
 .creative-content{
     color: white;
@@ -224,6 +227,7 @@ background: url(../images/pic5.jpg) center top;
 }
 
  footer{
+     clear: both;
      display: flex;
     width:auto;
      padding: 2% 10%;
@@ -308,6 +312,7 @@ background: url(../images/pic5.jpg) center top;
   
 }
 
+
 /* for Tablets and desktop*/
 @media (min-width: 601px) and (max-width: 800px)
 {     
@@ -338,15 +343,15 @@ background: url(../images/pic5.jpg) center top;
         font-size : 3vw; 
     }
     .title{
-        width: 80%;    
+        width: 85%;    
     }
     @-moz-document url-prefix() {
         .title{
-            width: 98%;
+            width: 95%;
         }
     }
     header h1{
-        font-size: 5vw ;
+        font-size: 5.1vw ;
     }
     header img{
         width: 30%;
