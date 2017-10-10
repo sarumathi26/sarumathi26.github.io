@@ -164,12 +164,14 @@ header img
     display: -webkit-flex;
     
 }
-.creative{
-    background: url(../images/pic5.jpg) center top;
+.creative , .sports{    
     background-size: cover;
     width:70%;
     height:500px;
-    margin: 60px 0;
+    margin: 60px 0 0 0;
+}
+.creative{
+background: url(../images/pic5.jpg) center top;
 }
 .creative-content{
     color: white;
@@ -216,10 +218,6 @@ header img
 }
 .sports{
     background: url(../images/pic2.jpg);
-    background-size: cover;
-    width:70%;
-    height:500px;
-    margin: 60px 0 0 0;
 }
 .content2 .creative-content{
     margin-right: -55px;
@@ -320,7 +318,7 @@ header img
         flex-direction: column;
    }
     .creative-content, .content2 .creative-content{
-        margin: -15% auto 0 auto;
+        margin: -10% auto 0 auto;
         width:90%;
         height: 300px;
     }
@@ -385,9 +383,13 @@ header img
     .creative, .sports{
         height: 300px;
         width:100%;
+        background-position: center bottom;
+    }
+    .sports{
+        background-position: top center;
     }
     .creative-content, .content2 .creative-content{
-        margin: -20% auto 0 auto;
+        margin: -15% auto 0 auto;
         width:90%;
         height: 30%;
     }
