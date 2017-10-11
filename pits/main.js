@@ -21,7 +21,7 @@ function carousel() {
     x[slideIndex-1].style.display = "block"; 
     setTimeout(carousel, 9000); 
 }
-function myFunction() {
+function Function() {
     var x = document.getElementById("page");
     if (x.className === "nav") {
         x.className += " responsive";
