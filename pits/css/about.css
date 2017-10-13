@@ -165,7 +165,7 @@ section p{
     margin: 0;
 }
  .row div:nth-child(2){
-    margin:0 9.9% ;
+    margin:0 8% ;
 }
 .Slides{
     display: none;
@@ -216,6 +216,16 @@ section p{
     .nav li{
         line-height: 2;
     }
+    .ugcourses , .pgcourses{
+        clear: both;
+        width: 100%;
+    }
+    .courses section{
+        float:right;
+    }
+    .row div:nth-child(2){
+    margin:0 7% ;
+}
 
 }
 
@@ -247,4 +257,17 @@ section p{
         padding: 0;
         text-align: center;
     }
+}
+@media (max-width:620px){
+    .photo{
+        width: 50%;
+        margin-bottom: 2% 
+    }
+    .row::after{
+        margin:0;
+    }
+    .row div:nth-child(2){
+    margin:0 0 2% 0 ;
+}
+    
 }
