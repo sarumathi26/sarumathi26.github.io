@@ -13,7 +13,7 @@
 }
 /* week mag */
 img.bill{
-   object-position: 50% 99%;
+   object-position: 50% 40%;
 }
 
 /* vision */
@@ -116,7 +116,7 @@ section h2{
     font-weight: normal;
     font-size: 35px;
 }
-section img{
+section .chairman{
     float: left;
     margin: 0 25px 25px 0;
     clear:left;
@@ -132,7 +132,57 @@ section p{
 .nav li a:hover, section a:hover{
     text-decoration: underline;
 }
+/* gallery */
+section.gallery{
+    float:left;
+    clear:both;
+    width: 100%;
+    padding: 0;
+    margin-left:0;
+}
+.row::after{
+    content: '';
+    clear:both;
+    display: table;
+    margin: 50px;
+}
+.photo{
+    float:left;
+    width: 25%;
+    background-color: lightgrey;
+    padding: 10px; 
+}
+.photo p{
+    text-align: center;
+    margin: 0;
+}
+.photo img{
+    width: 100%;
+    height: 200px;
+}
+.gallery div.row:nth-child(5)::after{
+    margin: 0;
+}
+ .row div:nth-child(2){
+    margin:0 9.9% ;
+}
+.Slides{
+    display: none;
+}
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
+.active, .dot:hover {
+  background-color: #717171;
+}
 @media (max-width: 800px){
     .nav{
         display:none;
@@ -165,17 +215,7 @@ section p{
     .nav li{
         line-height: 2;
     }
-    .pgcourses , .ugcourses{
-        clear: both;
-        float: left;
-        width: 100%;
-    }
-    section{    
-    float:right;
-    width: 90%;
-    margin: 1% 0 3% 0%;
-    padding-left: 20px;
-}
+
 }
 
 @media (max-width:600px){
